@@ -35,8 +35,8 @@
     }
   },
   "lint-staged": {
-    "./src/*.{js,ts,tsx,css,html,jsx,scss,json}": [
-      "npm run format",
+    "./src/**/*.{js,ts,tsx,css,html,jsx,scss,json}": [
+      "npx prettier --write",
       "git add"
     ]
   },
