@@ -36,7 +36,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx,css,html}": [
-      "npm run format",
+      "prettier  --tab-width 2 --write",
       "git add"
     ]
   },
