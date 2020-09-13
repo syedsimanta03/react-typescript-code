@@ -31,8 +31,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*": [
+      "npm run format",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,6 +59,7 @@
     "concurrently": "^5.3.0",
     "husky": "^4.3.0",
     "json-server": "^0.16.1",
+    "lint-staged": "^10.3.0",
     "prettier": "^2.1.1"
   }
 }
