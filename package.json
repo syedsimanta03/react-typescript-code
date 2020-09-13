@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write src/**/*.{js,ts,tsx,css,html,jsx,scss,json}",
+    "format": "prettier --write ./src/**/*.{js,ts,tsx,css,html,jsx,scss,json}",
     "json-server": "json-server --watch json-server/db.json --port 3001",
     "dev": "concurrently -k \"npm run json-server\" \"npm start\""
   },
@@ -35,7 +35,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,ts,tsx,css,html,jsx,scss,json}": [
+    "./src/*.{js,ts,tsx,css,html,jsx,scss,json}": [
       "npm run format",
       "git add"
     ]
