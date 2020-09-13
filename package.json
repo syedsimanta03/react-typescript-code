@@ -31,12 +31,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "node_modules/.bin/lint-staged"
     }
   },
   "lint-staged": {
-    "./src/**/*.{tsx,js,ts,css,html,jsx,scss,json}": [
-      "npx prettier --write ./src/**/*.{js,ts,tsx,css,html,jsx,scss,json}",
+    "*.{tsx,js,ts,css,html,jsx,scss,json}": [
+      "npm run format",
       "git add"
     ]
   },
